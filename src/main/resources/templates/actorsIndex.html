@@ -1,0 +1,18 @@
+{{> layout.header}}
+
+<div class="main">
+	<div class="container">
+		<h2>인기 배우</h2>
+		<div class="row">
+			{{#actors}}
+			<div class="actor col-xs-2">
+				<img alt="{{name}}" src="{{image}}" />
+				<h3>{{name}}</h3>
+				<a href="/actors/{{id}}">자세히 보기</a>
+			</div>
+			{{/actors}}
+		</div>
+	</div>
+</div>
+
+{{> layout.footer}}

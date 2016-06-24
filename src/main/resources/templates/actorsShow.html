@@ -1,0 +1,25 @@
+{{> layout.header}}
+
+<div class="main">
+	<div class="container">
+		<h2>{{actor.name}}</h2>
+		<div class="actor">
+			<img alt="{{actor.name}}" src="{{actor.image}}" />
+			<div class="info">
+				<p>{{actor.bio}}</p>
+			</div>
+		</div>
+		<h2>영화</h2>
+		{{#movies}}
+		<div class="movie">
+			<img alt="{{title}}" src="{{image}}" />
+			<h3 class="movie-title">{{title}}</h3>
+			<p class="movie-year">{{year}}</p>
+			<p class="movie-plot">{{plot}}</p>
+			<a href="/movies/{{id}}">자세히 보기</a>
+		</div>
+		{{/movies}}
+	</div>
+</div>
+
+{{> layout.footer}}
