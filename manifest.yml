@@ -1,0 +1,5 @@
+---
+applications:
+- name: m55
+  memory: 512M 
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
