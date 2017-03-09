@@ -1,7 +1,8 @@
 ---
 applications:
-- name: m55
-  memory: 512M 
+- name: movie
+  memory: 512M
+  host: m55
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
   services:
   - db1
